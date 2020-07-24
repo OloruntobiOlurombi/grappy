@@ -1,6 +1,6 @@
 import React from "react";
 import LoginImg from "../../login.svg";
-import { Link, withRouter } from "react-router-dom";
+import {  withRouter } from "react-router-dom";
 
 class Register extends React.Component {
   constructor(props) {
@@ -74,7 +74,7 @@ class Register extends React.Component {
           <div className="header">Sign Up</div>
           <div className="content">
             <div className="image">
-              <img src={LoginImg} />
+              <img src={LoginImg} alt=""/>
             </div>
             <div className="form">
               <div className="form-group">

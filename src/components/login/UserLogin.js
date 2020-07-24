@@ -1,5 +1,4 @@
-import React from 'react'
-import {Link, withRouter} from 'react-router-dom';
+import React from 'react';
 import LoginImg from '../../login.svg';
 
 
@@ -39,10 +38,8 @@ class UserLogin extends React.Component {
     e.preventDefault();
     const user = window.localStorage.getItem("user");
     let username = user.split(" ")[0]
-    let email = user.split(" ")[1]
     let password = user.split(" ")[2]
-    console.log("username", username, "password", password)
-    console.log("username", username);
+   
 
     if(this.state.username !== username && this.state.password !== password ){
       this.showValidationErr("username or password", "Username or Password is not correct!");
@@ -61,7 +58,7 @@ class UserLogin extends React.Component {
           <div className="header">Login</div>
           <div className="content">
             <div className="image">
-              <img src={LoginImg} />
+              <img src={LoginImg} alt="img"/>
             </div>
             <div className="form">
               <div className="form-group">

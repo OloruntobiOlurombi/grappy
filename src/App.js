@@ -3,7 +3,7 @@ import './App.scss';
 import './components/login/style.scss';
 import  UserLogin  from './components/login/UserLogin';
 import Register  from './components/login/register';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {  Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 
 class App extends React.Component {
@@ -62,16 +62,6 @@ class App extends React.Component {
   }
 }
 
-const RightSide = props => {
-  return(
-    <div className="right-side" ref={props.containerRef} onClick={props.onClick}>
-        <div className="inner-container">
-            <div className="text">
-                  {props.current}
-            </div>
-        </div>
-    </div>
-  )
-}
+
 
 export default App;
